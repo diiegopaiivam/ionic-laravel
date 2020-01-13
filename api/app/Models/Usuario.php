@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models;
+
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
+
+class Usuario extends Eloquent {
+    protected $connection = 'mongodb';
+    protected $collection = 'usuario';
+    
+    protected $fillable = ['nome', 'idade', 'telefone'];
+    
+    
+}
