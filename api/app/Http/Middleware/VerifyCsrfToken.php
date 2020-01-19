@@ -20,8 +20,14 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         'http://localhost/cadastro/',
+        'http://localhost:8000/perfil/',
         'http://localhost:8000/cadastro/',
+        'http://localhost:8000/usuario/*',
         'api/*',
         'http://localhost:8000/usuario/',
+        'http://localhost:8000/perfil/*',
+        'http://localhost:8000/usuario/{id}',
+        'http://localhost:8000/perfil/{id}',
+        
     ];
 }
